@@ -1,0 +1,7 @@
+.ishop-detail-save:focus {
+    box-shadow: none !important;
+}
+.ishop-detail-save span {
+    position: relative;
+    top: -20px;
+}

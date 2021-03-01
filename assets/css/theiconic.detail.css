@@ -1,0 +1,31 @@
+.ishop-detail-save {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    color: white !important;
+    background-color: transparent;
+    padding: 4px 10px;
+    font-size: 9px;
+    border-radius: 10px;
+    min-width: 55px;
+    max-width: 200px;
+    /* float: right; */
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+    z-index: 999;
+}
+
+.ishop-detail-save span {
+    font-family: "Worksans";
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px #8888;
+    border-radius: 5px;
+    background-color: #fff7ec;
+    color: #e0705e;
+}
+.ishop-detail-save img {
+    box-shadow: 1px 1px 2px 1px #8888;
+    border-radius: 8px;
+    background-color: #e0705e;
+}

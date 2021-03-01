@@ -1,0 +1,58 @@
+{
+    "name": "iShop",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Save Product Item Chrome extension",
+    "icons": {
+        "16": "assets/icons/icon16.png",
+        "32": "assets/icons/icon32.png",
+        "64": "assets/icons/icon64.png",
+        "128": "assets/icons/icon128.png"
+    },
+    "default_locale": "en",
+    "background": {
+        "page": "background/index.html",
+        "persistent": true
+    },
+    "options_page": "options/index.html",
+    "browser_action": {
+        "default_icon": "assets/icons/icon24.png",
+        "default_title": "iShop",
+        "default_popup": "popup/index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": [
+                "assets/jquery/jquery.min.js",
+                "assets/firebase/firebase-app.js",
+                "assets/firebase/firebase-database.js",
+                "content/firebase.lib.js",
+                "utils/ext.js"
+            ],
+            "css": ["assets/css/content.css"]
+        },
+        {
+            "matches": ["https://www.theiconic.com.au/*"],
+            "exclude_matches": [
+                "https://www.theiconic.com.au/*.html",
+                "https://www.theiconic.com.au/*.html?*"
+            ],
+            "js": ["content/theiconic.js"]
+        },
+        {
+            "matches": [
+                "https://www.theiconic.com.au/*.html",
+                "https://www.theiconic.com.au/*.html?*"
+            ],
+
+            "js": ["content/theiconic.detail.js"],
+            "css": ["assets/css/theiconic.detail.css"]
+        }
+    ],
+    "permissions": ["https://*/*"],
+
+    "web_accessible_resources": ["assets/*.*"],
+
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/  https://cdn.firebase.com https://*.firebaseio.com https://www.googleapis.com https://*.google.com; object-src 'self';"
+}

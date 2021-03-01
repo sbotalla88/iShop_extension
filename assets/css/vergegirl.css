@@ -1,0 +1,9 @@
+.ishop-save {
+    padding: 3px;
+    text-align: center;
+}
+
+.ishop-detail-save span {
+    position: relative;
+    top: -20px;
+}

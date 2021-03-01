@@ -1,0 +1,19 @@
+.ishop-save {
+    margin: auto !important;
+    margin-top: 10px !important;
+    padding: 3px 7px !important;
+}
+
+.ishop-detail-save {
+    padding: 10px !important;
+    margin: top 10px !important;
+}
+.ishop-detail-save span {
+    position: relative;
+    top: -20px;
+    padding: 10px !important;
+}
+
+.ishop-modal-content {
+    margin: 5% auto 0% !important;
+}

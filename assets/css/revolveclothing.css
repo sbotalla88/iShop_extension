@@ -1,0 +1,9 @@
+.ishop-save {
+    z-index: 999;
+    position: relative;
+    line-height: 1em;
+    top: -15px;
+}
+.ishop-detail-save img {
+    width: auto !important;
+}

@@ -1,0 +1,11 @@
+.ishop-detail-save {
+    top: 180px;
+}
+.ishop-detail-save span {
+    position: relative;
+    top: -20px;
+}
+
+.ishop-detail-save img {
+    display: inline-block;
+}
